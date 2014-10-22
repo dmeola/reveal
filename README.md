@@ -25,7 +25,9 @@ No more guesswork, no more hunting down files.
 
 Set up:
 ------
-1. Drag the following into your bookmarks bar: 
-    [reveal](javascript:(function(){var e=document.createElement("script");e.setAttribute("src","http://anf.dmeola.com/reveal.js");document.body.appendChild(e);var t=document.createElement("link");t.setAttribute("rel","stylesheet");t.setAttribute("href","http://anf.dmeola.com/reveal.css");t.setAttribute("type","text/css");document.body.appendChild(t)})()")
+1. Bookmark this page, then edit the bookmark and replace the URL with the following:
+```
+    javascript:(function(){var e=document.createElement("script");e.setAttribute("src","http://anf.dmeola.com/reveal.js");document.body.appendChild(e);var t=document.createElement("link");t.setAttribute("rel","stylesheet");t.setAttribute("href","http://anf.dmeola.com/reveal.css");t.setAttribute("type","text/css");document.body.appendChild(t)})()"
+```
 2. ???
 3. Profit.
