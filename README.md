@@ -3,7 +3,7 @@ reveal
 
 What it does:
 ------
-Reveal is a tool for web developers that need a faster way to track down appropriate files and includes from the browser.
+Reveal is a tool for web developers that need a faster way to track down your site's backend files and includes from the browser.
 
 By placing a comment before an element, you can document the name of an include, a content asset, or just leave a note or reminder.
 
