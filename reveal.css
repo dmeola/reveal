@@ -2,8 +2,11 @@
     background: #999;
 }
 .tooltip {
+    display: block;
+    line-height: 1.5em;
     position: absolute;
     background: #666;
     padding: 10px;
     color: #fff;
+    z-index: 100;
 }
