@@ -1,4 +1,4 @@
-<!-- Reveal worked! Thanks for checking it out- I appreciate any feedback! -->
+<!--- Reveal worked! Thanks for checking it out- I appreciate any feedback! --->
 reveal
 ======
 
