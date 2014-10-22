@@ -1,0 +1,9 @@
+.hover {
+    background: #999;
+}
+.tooltip {
+    position: absolute;
+    background: #666;
+    padding: 10px;
+    color: #fff;
+}
