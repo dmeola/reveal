@@ -1,4 +1,3 @@
-<!--- Reveal worked! Thanks for checking it out- I appreciate any feedback! --->
 reveal
 ======
 
@@ -32,3 +31,8 @@ Set up:
 ```
 2. ???
 3. Profit.
+
+Caveats:
+------
+1. This probably won't work in IE8
+2. Some sites (such as github) block cross site scripting for security reasons. Such sites block the necessary reveal JS and CSS from loading. 
