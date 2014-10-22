@@ -5,7 +5,7 @@ What it does:
 ------
 Reveal is a tool for web developers that need a faster way to track down backend files and includes from the browser.
 
-By placing a comment before an element on your site, you can document the name of an include, a content asset, or just leave a note or reminder.
+By placing a comment before an element on your site, you can document the name of an include, a content asset, or just leave a note or reminder. When you hover over an element the associated comment is revealed in a tooltip.
 
 How it works:
 ------
