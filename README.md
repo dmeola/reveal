@@ -29,7 +29,8 @@ Set up:
 ```javascript
     javascript:(function(){var e=document.createElement("script");e.setAttribute("src","http://anf.dmeola.com/reveal.js");document.body.appendChild(e);var t=document.createElement("link");t.setAttribute("rel","stylesheet");t.setAttribute("href","http://anf.dmeola.com/reveal.css");t.setAttribute("type","text/css");document.body.appendChild(t)})()"
 ```
-2) Hover over an element that has a preceding HTML comment. 
+2) Navigate to your site and click the bookmarklet. Hover over an element that has a preceding HTML comment. 
+Example:
 ```html
 <!-- Begin Nav.php include -->
 <nav> ... </nav>
