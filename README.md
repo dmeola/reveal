@@ -36,3 +36,4 @@ Caveats:
 ------
 1. This probably won't work in IE8
 2. Some sites (such as github) block cross site scripting for security reasons. Such sites block the necessary reveal JS and CSS from loading. 
+3. Requires jQuery (TODO: inject jQuery when necessary, or rewrite in vanilla js)
