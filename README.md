@@ -1,17 +1,21 @@
+<!-- This is an h1 element used for the main heading -->
 reveal
 ======
 
+<!-- Whoa a sneaky h2 element appears! -->
 What it does:
 ------
 Reveal is a tool for web developers that need a faster way to track down backend files and includes from the browser.
 
 By placing a comment before an element on your site, you can document the name of an include, a content asset, or just leave a note or reminder. When you hover over an element the associated comment is revealed in a tooltip.
 
+<!-- I can throw an image in a comment <a href="//unsplash.imgix.net/41/bXoAlw8gT66vBo1wcFoO_IMG_9181.jpg?auto=format&dpr=2&fit=crop&fm=jpg&h=220&q=50&w=330" width="330"/> -->
 How it works:
 ------
 Reveal is a bookmarklet that only runs when clicked. Once clicked it injects reveal.js and reveal.css (very small files) onto the page. 
 It will run immediately, traversing the DOM and associating comments with DOM elements. 
 
+<!-- the associated comment -->
 When you hover over an element, the associated comment is revealed. 
 
 Why I made it:
@@ -37,6 +41,7 @@ Example:
 ```
 3) Profit.
 
+<!-- Oh noes -->
 Caveats:
 ------
 1. This probably won't work in IE8
