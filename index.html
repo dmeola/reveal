@@ -39,7 +39,7 @@
 
 <p>Reveal is a tool for web developers that need a faster way to track down backend files and includes from the browser.</p>
 
-<p>By placing a comment before an element on your site, you can document the name of an include, a content asset, or just leave a note or reminder.</p>
+<p>By placing a comment before an element on your site, you can document the name of an include, a content asset, or just leave a note or reminder. When you hover over an element the associated comment is revealed in a tooltip.</p>
 
 <h2>
 <a name="how-it-works" class="anchor" href="#how-it-works"><span class="octicon octicon-link"></span></a>How it works:</h2>
@@ -62,17 +62,19 @@ Then I just go into my IDE or editor and open the file. </p>
 <h2>
 <a name="set-up" class="anchor" href="#set-up"><span class="octicon octicon-link"></span></a>Set up:</h2>
 
-<ol>
-<li>Bookmark this page, then edit the bookmark and replace the URL with the following:</li>
-</ol>
+<p>1) Bookmark this page, then edit the bookmark and replace the URL with the following:</p>
 
-<div class="highlight highlight-javascript"><pre>    <span class="nx">javascript</span><span class="o">:</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span><span class="kd">var</span> <span class="nx">e</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">"script"</span><span class="p">);</span><span class="nx">e</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">"src"</span><span class="p">,</span><span class="s2">"http://anf.dmeola.com/reveal.js"</span><span class="p">);</span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">e</span><span class="p">);</span><span class="kd">var</span> <span class="nx">t</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">"link"</span><span class="p">);</span><span class="nx">t</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">"rel"</span><span class="p">,</span><span class="s2">"stylesheet"</span><span class="p">);</span><span class="nx">t</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">"href"</span><span class="p">,</span><span class="s2">"http://anf.dmeola.com/reveal.css"</span><span class="p">);</span><span class="nx">t</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">"type"</span><span class="p">,</span><span class="s2">"text/css"</span><span class="p">);</span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">t</span><span class="p">)})()</span><span class="err">"</span>
+<div class="highlight highlight-javascript"><pre><span class="nx">javascript</span><span class="o">:</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span><span class="kd">var</span> <span class="nx">e</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">"script"</span><span class="p">);</span><span class="nx">e</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">"src"</span><span class="p">,</span><span class="s2">"http://anf.dmeola.com/reveal.js"</span><span class="p">);</span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">e</span><span class="p">);</span><span class="kd">var</span> <span class="nx">t</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">"link"</span><span class="p">);</span><span class="nx">t</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">"rel"</span><span class="p">,</span><span class="s2">"stylesheet"</span><span class="p">);</span><span class="nx">t</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">"href"</span><span class="p">,</span><span class="s2">"http://anf.dmeola.com/reveal.css"</span><span class="p">);</span><span class="nx">t</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">"type"</span><span class="p">,</span><span class="s2">"text/css"</span><span class="p">);</span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">t</span><span class="p">)})()</span><span class="err">"</span>
 </pre></div>
 
-<ol>
-<li>???</li>
-<li>Profit.</li>
-</ol>
+<p>2) Navigate to your site and click the bookmarklet. Hover over an element that has a preceding HTML comment. 
+Example:</p>
+
+<div class="highlight highlight-html"><pre><span class="c">&lt;!-- Begin Nav.php include --&gt;</span>
+<span class="nt">&lt;nav&gt;</span> ... <span class="nt">&lt;/nav&gt;</span>
+</pre></div>
+
+<p>3) Profit.</p>
 
 <h2>
 <a name="caveats" class="anchor" href="#caveats"><span class="octicon octicon-link"></span></a>Caveats:</h2>
@@ -80,6 +82,7 @@ Then I just go into my IDE or editor and open the file. </p>
 <ol>
 <li>This probably won't work in IE8</li>
 <li>Some sites (such as github) block cross site scripting for security reasons. Such sites block the necessary reveal JS and CSS from loading. </li>
+<li>Requires jQuery (TODO: inject jQuery when necessary, or rewrite in vanilla js)</li>
 </ol>
       </section>
     </div>
