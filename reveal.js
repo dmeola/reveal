@@ -18,7 +18,7 @@
 				var $child = $(children[i]).next();										// assign appropriate node
 				$child.attr('comment-id', commentID);									// store ID
 
-				$child.on('mouseover', function(event) {
+				$child.on('click', function(event) {
 					event.stopPropagation();											// let the child win
 					$(this).addClass("hover");											// highlight the appropriate element
 					$(this).before( '<div class="tooltip"></div>');						// create tooltip container
@@ -28,12 +28,11 @@
 				});
 
 				//remove tooltip on mouseout
-				
 				$child.on('mouseout', function(event) {
 					event.stopPropagation();											// better to focus on child than parent
-					$(this).removeClass("hover");
-					$('.tooltip').empty();
-					$('.tooltip').remove();
+					// $(this).removeClass("hover");
+					// $('.tooltip').empty();
+					// $('.tooltip').remove();
 				});
 
 				commentID += 1;
